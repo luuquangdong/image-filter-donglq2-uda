@@ -4,11 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-	"start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf www/ || true",
     "build": "npm run clean && tsc && cp package.json www/package.json && mkdir www/tmp/ && cd www && zip -r Archive.zip . && cd ..",
-	"tsc": "tsc",
+    "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
   },
   "repository": {
@@ -31,12 +30,12 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "jimp": "^0.16.1",
-    "rimraf": "^3.0.2",
-    "lodash": "^4.17.15"
+    "jimp": "^0.22.7",
+    "lodash": "^4.17.15",
+    "rimraf": "^3.0.2"
   },
   "engines": {
-	"node": "14.x.x",
-	"npm": "6.x.x"
+    "node": "14.x.x",
+    "npm": "6.x.x"
   }
 }
